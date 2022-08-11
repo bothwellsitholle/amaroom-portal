@@ -12,10 +12,8 @@ $transitionEasing: cubic-bezier(0.36, 1, 0.62, 0.98);
 
 $background1: rgba(67, 59, 124, 0.589);
 $background2: rgba(51, 65, 90, 0.568);
-// $background2: rgba(44, 73, 127, 0.849);
 
 $yellow: rgb(161, 9, 9);
-// $yellow: #ED6A5E;
 
 @mixin box-shadow($props...) {
   -webkit-box-shadow: $props;
@@ -63,7 +61,6 @@ body,
 }
 
 .form-block-wrapper {
-  //  padding-top: 160px;
   position: fixed;
   top: 0;
   left: 0;

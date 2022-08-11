@@ -14,16 +14,6 @@ export const RandomUser = () => {
   return users[Math.floor(Math.random() * 5)]
 }
 
-// {
-//   avatar: user1,
-//   name: "Hanna Gover",
-//   email: "hgover@gmail.com",
-//   project: "073 345 1323",
-//   status: "pending",
-//   weeks: "01 Jan 2022",
-//   budget: "2441 Main Rd, Bedfordview",
-//   amount: 'R2500'
-// },
 
 const tableData = [
   {
@@ -89,7 +79,6 @@ const LogASale = () => {
     storedSales ? storedSales : tableData,
   )
 
-  // localStorage.removeItem('sales')
   const onLogSale = (data) => {
     console.log('data', data)
     let storedSales = JSON.parse(localStorage.getItem('sales'))
@@ -123,14 +112,8 @@ const LogASale = () => {
   }
   return (
     <div>
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Row*/}
-      {/* --------------------------------------------------------------------------------*/}
       <Row>
         <Col xs="12" md="12" sm="12">
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-1*/}
-          {/* --------------------------------------------------------------------------------*/}
           <Card>
             <CardTitle tag="h4" className="border-bottom p-3 mb-0">
               Log A Sale
@@ -143,20 +126,15 @@ const LogASale = () => {
       </Row>
       <Row>
         <Col xs="12" md="12" sm="12">
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-1*/}
-          {/* --------------------------------------------------------------------------------*/}
           <Card>
             <CardTitle tag="h4" className="border-bottom p-3 mb-0">
               Your Recent Sales
-              {/* <p> */}
                 <CardSubtitle className="text-muted  p-3 mb-0" tag="h6">
                   Total: R
                   {salesData.reduce(
                     (acc, curr) => acc + parseFloat(curr.amount),
                     0,
                   )}
-                {/* </p> */}
               </CardSubtitle>
             </CardTitle>
             <CardBody className="">

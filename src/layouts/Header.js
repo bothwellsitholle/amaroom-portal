@@ -4,9 +4,7 @@ import {
   Navbar,
   Collapse,
   Nav,
-  // NavItem,
   NavbarBrand,
-  // UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
@@ -43,12 +41,13 @@ const Header = () => {
               alignItems: 'center',
             }}
           >
-            <img
+            {/* <img
               src='https://amaroomamahle.co.za/wp-content/uploads/2021/11/AMAROOM.png'
               height='50'
               width='100'
               alt='logo'
-            />
+            /> */}
+            <LogoWhite />
           </div>
         </div>
         <NavbarBrand href='/'>

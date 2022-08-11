@@ -38,16 +38,16 @@ const Messages = () => {
     storedMessages? storedMessages: messages,
   )
 
-  // localStorage.removeItem('messages')
+
   const onApprove = (id) => {
     const filteredMessages = messagesData.filter(s => s.id !== id)
     setMessageData(filteredMessages)
     localStorage.setItem('messages', JSON.stringify(filteredMessages))
 
-    //storing apointments data
     let storedAppointments = JSON.parse(localStorage.getItem('appointments'))
     let appointment = messagesData.filter(s => s.id === id)
-    console.log('storedAppointments', storedAppointments)
+
+
     if (storedAppointments) {
       storedAppointments.push(appointment)
       localStorage.setItem('appointments', JSON.stringify(storedAppointments))

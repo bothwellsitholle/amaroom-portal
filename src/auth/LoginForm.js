@@ -60,7 +60,6 @@ const LoginForm = ({ mode, onSubmit, setIsLoggedIn, setErr }) => {
     }
   }
   return (
-    // <form onSubmit={loginHandler}>
     <>
       <div className="form-block__input-wrapper">
         <div className="form-group form-group--login">
@@ -125,7 +124,6 @@ const LoginForm = ({ mode, onSubmit, setIsLoggedIn, setErr }) => {
         {loading && 'loading...'}
       </button>
       </>
-    // </form>
   )
 }
 

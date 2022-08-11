@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './styles.scss';
 import LoginForm from './LoginForm';
+import { ReactComponent as LogoWhite } from '../assets/images/logos/materialprowhite.svg';
+
 
 const LoginComponent = ({ mode, onSubmit, setIsLoggedIn }) => {
   const [state_mode, setStateMode] = useState(mode);
@@ -23,13 +25,7 @@ const LoginComponent = ({ mode, onSubmit, setIsLoggedIn }) => {
           alignItems: 'center',
         }}
       >
-        {/* <h3 style={{zIndex: 100, marginBottom: -10,  marginTop: 50}}> Amarrom Amahle </h3> */}
-        <img
-          src='https://amaroomamahle.co.za/wp-content/uploads/2021/11/AMAROOM.png'
-          style={{ zIndex: 100, marginBottom: -10 }}
-          width='180'
-          alt='logo'
-        />
+        <LogoWhite />
         <div
           className={`form-block-wrapper form-block-wrapper--is-${state_mode }`}
         ></div>

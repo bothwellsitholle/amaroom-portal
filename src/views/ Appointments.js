@@ -24,7 +24,6 @@ const Appointments = () => {
           <div>
             <Alert
               color='warning'
-              // color="light-success"
               isOpen={visible}
               toggle={onDismiss.bind(null)}
             >
