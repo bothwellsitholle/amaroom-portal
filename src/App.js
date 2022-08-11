@@ -1,7 +1,6 @@
 import { useRoutes } from 'react-router-dom';
 import Themeroutes from './routes/Router';
 import LoginComponent from './auth/LoginComponent';
-// import './auth/styles.scss';
 import { useState } from 'react';
 
 const mode = 'login';

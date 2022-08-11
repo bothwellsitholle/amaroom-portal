@@ -29,21 +29,11 @@ const navigation = [
     href: '/appointments',
     icon: 'bi bi-layout-split',
   },
-  // {
-  //   title: "About",
-  //   href: "/cards",
-  //   icon: "bi bi-card-text",
-  // },
   {
     title: 'Support',
     href: '/support',
     icon: 'bi bi-textarea-resize',
   },
-  // {
-  //   title: "Support",
-  //   href: "/breadcrumbs",
-  //   icon: "bi bi-link",
-  // },
   {
     title: 'Settings',
     href: '/settings',
@@ -61,12 +51,6 @@ const Sidebar = () => {
     document.getElementById('sidebarArea').classList.toggle('showSidebar')
   }
   let location = useLocation()
-
-  // const logoutHandler = () => {
-  //   <Link
-  //     to={'/'}
-  //   ></Link>;
-  // };
 
   return (
     <div>

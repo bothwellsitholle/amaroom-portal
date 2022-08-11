@@ -60,7 +60,6 @@ const ProjectTables = () => {
         <CardBody>
           <CardTitle tag="h5">Recent Viewings</CardTitle>
           <CardSubtitle className="mb-2 text-muted" tag="h6">
-            {/* your list of recent viewings and their statuses */}
           </CardSubtitle>
 
           <Table className="no-wrap mt-3 align-middle" responsive borderless>

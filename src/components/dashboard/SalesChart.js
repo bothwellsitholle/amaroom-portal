@@ -1,7 +1,6 @@
 import {
   Card,
   CardBody,
-  //  CardSubtitle,
   CardTitle,
 } from 'reactstrap'
 import Chart from 'react-apexcharts'
@@ -51,10 +50,6 @@ const SalesChart = () => {
     ],
   }
   const series = [
-    // {
-    //   name: "2020",
-    //   data: [20, 40, 50, 30, 40, 50, 30, 30, 40],
-    // },
     {
       name: '2022',
       data: [10, 20, 40, 60, 20, 40, 90],
@@ -65,9 +60,6 @@ const SalesChart = () => {
     <Card>
       <CardBody>
         <CardTitle tag="h5">Your % Conversion Rate</CardTitle>
-        {/* <CardSubtitle className="text-muted" tag="h6">
-           % montly conversion rate report
-        </CardSubtitle> */}
         <Chart options={options} series={series} type="bar" height="379" />
       </CardBody>
     </Card>

@@ -12,7 +12,7 @@ const Input = ({ id, type, label, disabled, onChange }) => (
   />
 )
 
-const LoginForm = ({ mode, onSubmit, setIsLoggedIn, setErr }) => {
+const LoginForm = ({ mode, setIsLoggedIn, setErr }) => {
   const [username, setUsername] = useState('')
   const [fullname, setFullname] = useState('')
   const [email, setEmail] = useState('')
